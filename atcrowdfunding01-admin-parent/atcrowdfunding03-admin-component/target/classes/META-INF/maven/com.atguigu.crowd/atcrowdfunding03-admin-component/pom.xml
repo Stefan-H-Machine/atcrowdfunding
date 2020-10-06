@@ -17,6 +17,12 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
   <dependencies>
+      <!-- 依赖 MyBatis 核心包 -->
+	<dependency>
+	 <groupId>org.mybatis</groupId>
+	 <artifactId>mybatis</artifactId>
+	 <version>3.2.8</version>
+	</dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
