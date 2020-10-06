@@ -26,5 +26,7 @@
     <module>atcrowdfunding02-admin-webui</module>
     <module>atcrowdfunding03-admin-component</module>
     <module>atcrowdfunding04-admin-entity</module>
+    <module>atcrowdfunding05-common-util</module>
+    <module>atcrowdfunding06-common-reverse</module>
   </modules>
 </project>

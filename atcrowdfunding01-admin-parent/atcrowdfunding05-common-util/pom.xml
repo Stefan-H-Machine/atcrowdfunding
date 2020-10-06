@@ -8,9 +8,9 @@
     <version>0.0.1-SNAPSHOT</version>
   </parent>
   <groupId>com.atguigu.crowd</groupId>
-  <artifactId>atcrowdfunding02-admin-webui</artifactId>
+  <artifactId>atcrowdfunding05-common-util</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>atcrowdfunding02-admin-webui</name>
+  <name>atcrowdfunding05-common-util</name>
   <url>http://maven.apache.org</url>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
