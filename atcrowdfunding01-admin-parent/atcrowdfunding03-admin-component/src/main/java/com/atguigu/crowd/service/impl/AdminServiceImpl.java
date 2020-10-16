@@ -1,11 +1,3 @@
-/**
- * 
- */
-/**
- * @author Administrator
- *
- */
-
 package com.atguigu.crowd.service.impl;
 
 import java.util.List;
@@ -18,20 +10,20 @@ import com.atguigu.crowd.entity.AdminExample;
 import com.atguigu.crowd.mapper.AdminMapper;
 import com.atguigu.crowd.service.api.AdminService;
 
-
-public class AdminServiceImpl implements AdminService{
+@Service
+public class AdminServiceImpl implements AdminService {
 	
 	@Autowired
 	private AdminMapper adminMapper;
-	
-	@Override
+
 	public void saveAdmin(Admin admin) {
+		// TODO Auto-generated method stub
 		adminMapper.insert(admin);
 	}
-	
-	@Override
+
 	public List<Admin> getAll() {
+		// TODO Auto-generated method stub
 		return adminMapper.selectByExample(new AdminExample());
 	}
-	
+
 }
