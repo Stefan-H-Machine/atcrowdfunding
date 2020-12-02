@@ -14,4 +14,4 @@ public interface AdminService {
 
 	List<Admin> getAll();
 
-}
+} 

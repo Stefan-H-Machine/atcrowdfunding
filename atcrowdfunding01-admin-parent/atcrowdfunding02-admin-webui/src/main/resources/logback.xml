@@ -6,6 +6,7 @@
 		<encoder>
 			<!-- 日志输出的格式 -->
 			<!-- 按照顺序分别是：时间、日志级别、线程名称、打印日志的类、日志主体内容、换行 -->
+			<!-- %-5 固定占五个字符 -->
 			<pattern>[%d{HH:mm:ss.SSS}] [%-5level] [%thread] [%logger] [%msg]%n</pattern>
 		</encoder>
 	</appender>

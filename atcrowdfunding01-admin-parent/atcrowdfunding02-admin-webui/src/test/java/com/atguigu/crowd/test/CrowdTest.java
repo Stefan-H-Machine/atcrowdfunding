@@ -6,6 +6,7 @@ package com.atguigu.crowd.test;
 
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.log;
 
+
 import java.sql.Connection;
 import java.sql.SQLException;
 
@@ -24,8 +25,9 @@ import com.atguigu.crowd.mapper.AdminMapper;
 //import com.atguigu.crowd.service.api.AdminService;
 import com.atguigu.crowd.service.api.AdminService;
 
+// åœ¨ç±»ä¸Šæ ‡è®°å¿…è¦çš„æ³¨è§£ï¼ŒSpringæ•´åˆJunit
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = { "classpath:spring-persist-mybatis.xml", "classpath:spring-persist-tx.xml" })
+@ContextConfiguration(locations = { "classpath:spring-persist-mybatis.xml", "classpath:spring-persist-tx.xml" }) //åŠ è½½é…ç½®æ–‡ä»¶
 public class CrowdTest {
 	@Autowired
 	private DataSource dataSource;
@@ -38,15 +40,15 @@ public class CrowdTest {
 
 	@Test
 	public void testTx() {
-		Admin admin = new Admin(null, "jerry", "123456", "æ°ç‘", "jerry@qq.com", null);
+		Admin admin = new Admin(null, "poy", "654321", "é­„åŠ›", "poy@qq.com", null);
 		adminService.saveAdmin(admin);
 	}
 
 	@Test
 	public void testLog() {
-		// ¸ù¾İLogger¶ÔÏó£¬ÕâÀï´«ÈëµÄClass¶ÔÏó¾ÍÊÇµ±Ç°´òÓ¡ÈÕÖ¾µÄ
+		// ï¿½ï¿½ï¿½ï¿½Loggerï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï´«ï¿½ï¿½ï¿½Classï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Çµï¿½Ç°ï¿½ï¿½Ó¡ï¿½ï¿½Ö¾ï¿½ï¿½
 		Logger logger = LoggerFactory.getLogger(CrowdTest.class);
-		// 2.¸ù¾İ²»Í¬ÈÕÖ¾¼¶±ğ´òÓ¡ÈÕÖ¾
+		// 2.ï¿½ï¿½ï¿½İ²ï¿½Í¬ï¿½ï¿½Ö¾ï¿½ï¿½ï¿½ï¿½ï¿½Ó¡ï¿½ï¿½Ö¾
 		logger.debug("Hello I am Debug level!!!");
 		logger.debug("Hello I am Debug level!!!");
 		logger.debug("Hello I am Debug level!!!");
@@ -66,9 +68,9 @@ public class CrowdTest {
 
 	@Test
 	public void testInsertAdmin() {
-		Admin admin = new Admin(null, "tom", "123123", "ÌÀÄ·", "tom@qq.com", null);
+		Admin admin = new Admin(null, "tom", "123123", "ï¿½ï¿½Ä·", "tom@qq.com", null);
 		int count = adminMapper.insert(admin);
-		System.out.println("ÊÜÓ°ÏìµÄĞĞÊı=" + count);
+		System.out.println("ï¿½ï¿½Ó°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½=" + count);
 	}
 
 	@Test
