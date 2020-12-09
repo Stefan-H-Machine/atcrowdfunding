@@ -1,7 +1,3 @@
-/**
- * @author Administrator
- *
- */
 package com.atguigu.crowd.service.api;
 
 import java.util.List;
@@ -14,4 +10,4 @@ public interface AdminService {
 
 	List<Admin> getAll();
 
-} 
+}
