@@ -5,6 +5,7 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 import javax.servlet.http.HttpServletRequest;
+
 import com.atguigu.crowd.constant.CrowdConstant;
 
 /**
@@ -12,7 +13,6 @@ import com.atguigu.crowd.constant.CrowdConstant;
  * @author 少帆
  *
  */
-
 public class CrowdUtil {
 	
 	/**
