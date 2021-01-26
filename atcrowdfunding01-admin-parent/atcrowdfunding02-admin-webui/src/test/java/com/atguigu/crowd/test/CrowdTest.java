@@ -14,7 +14,9 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import com.atguigu.crowd.entity.Admin;
+import com.atguigu.crowd.entity.Role;
 import com.atguigu.crowd.mapper.AdminMapper;
+import com.atguigu.crowd.mapper.RoleMapper;
 import com.atguigu.crowd.service.api.AdminService;
 
 // 在类上标记必要的注解，Spring整合Junit
@@ -30,6 +32,16 @@ public class CrowdTest {
 	
 	@Autowired
 	private AdminService adminService;
+	
+	@Autowired
+	private RoleMapper roleMapper;
+	
+	@Test
+	public void testRoleSave() {
+		for(int i = 0; i < 235; i++) {
+			roleMapper.insert(new Role(null, "role"+i));
+		}
+	}
 	
 	@Test
 	public void test() {

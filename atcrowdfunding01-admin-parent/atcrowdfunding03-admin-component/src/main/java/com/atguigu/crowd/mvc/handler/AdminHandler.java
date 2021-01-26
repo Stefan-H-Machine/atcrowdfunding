@@ -67,7 +67,7 @@ public class AdminHandler {
 		// return "admin-page";
 		
 		// 尝试方案2：转发到/admin/get/page.html地址，一旦刷新页面会重复执行删除浪费性能
-//		 return "forward:/admin/get/page.html";
+		// return "forward:/admin/get/page.html";
 		
 		// 尝试方案3：重定向到/admin/get/page.html地址
 		// 同时为了保持原本所在的页面和查询关键词再附加pageNum和keyword两个请求参数

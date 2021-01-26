@@ -14,13 +14,10 @@ public class Admin {
     private String createTime;
     
     public Admin() {
-		super();
+		
 	}
 
-    //建一个set和get方法，快捷键为“alt+shift+s”,然后再按一下“r”。
-    //然后我们建一个有参函数，快捷键为“alt+shift+s”,然后再按一下“o”
-    //然后我们建一个无参函数，快捷键为“alt+shift+s”,然后再按一下“c”
-	public Admin(Integer id, String loginAcct, String userPswd, String userName, String email, String createTime) {
+    public Admin(Integer id, String loginAcct, String userPswd, String userName, String email, String createTime) {
 		super();
 		this.id = id;
 		this.loginAcct = loginAcct;
@@ -28,6 +25,12 @@ public class Admin {
 		this.userName = userName;
 		this.email = email;
 		this.createTime = createTime;
+	}
+
+	@Override
+	public String toString() {
+		return "Admin [id=" + id + ", loginAcct=" + loginAcct + ", userPswd=" + userPswd + ", userName=" + userName
+				+ ", email=" + email + ", createTime=" + createTime + "]";
 	}
 
 	public Integer getId() {

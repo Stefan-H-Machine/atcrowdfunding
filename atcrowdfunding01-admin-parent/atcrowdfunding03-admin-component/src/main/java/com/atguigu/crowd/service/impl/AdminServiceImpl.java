@@ -32,6 +32,7 @@ public class AdminServiceImpl implements AdminService {
 	
 	private Logger logger = LoggerFactory.getLogger(AdminServiceImpl.class);
 
+	
 	public void saveAdmin(Admin admin) {
 		
 		// 1.密码加密
@@ -60,9 +61,11 @@ public class AdminServiceImpl implements AdminService {
 		
 	}
 
+
 	public List<Admin> getAll() {
 		return adminMapper.selectByExample(new AdminExample());
 	}
+
 
 	public Admin getAdminByLoginAcct(String loginAcct, String userPswd) {
 		
@@ -111,6 +114,7 @@ public class AdminServiceImpl implements AdminService {
 		return admin;
 	}
 
+
 	public PageInfo<Admin> getPageInfo(String keyword, Integer pageNum, Integer pageSize) {
 		
 		// 1.调用PageHelper的静态方法开启分页功能
@@ -124,14 +128,17 @@ public class AdminServiceImpl implements AdminService {
 		return new PageInfo<Admin>(list);
 	}
 
+
 	public void remove(Integer adminId) {
 		adminMapper.deleteByPrimaryKey(adminId);
 	}
 
+
 	public Admin getAdminById(Integer adminId) {
 		return adminMapper.selectByPrimaryKey(adminId);
 	}
-	
+
+
 	public void update(Admin admin) {
 		
 		// “Selective”表示有选择的更新，对于null值的字段不更新
