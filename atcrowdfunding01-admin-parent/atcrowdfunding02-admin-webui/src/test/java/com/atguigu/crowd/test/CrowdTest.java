@@ -57,7 +57,7 @@ public class CrowdTest {
 	}
 	
 	@Test
-	public void testLog() {
+	public void testLog() { 
 		
 		// 1.获取Logger对象，这里传入的Class对象就是当前打印日志的类
 		Logger logger = LoggerFactory.getLogger(CrowdTest.class);
