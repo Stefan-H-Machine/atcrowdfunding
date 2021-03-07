@@ -61,7 +61,7 @@ public class MenuHandler {
 		Menu root = null;
 		
 		// 3.创建Map对象用来存储id和Menu对象的对应关系便于查找父节点
-		Map<Integer, Menu> menuMap = new HashMap();
+		Map<Integer, Menu> menuMap = new HashMap<Integer, Menu>();
 		
 		// 4.遍历menuList填充menuMap
 		for (Menu menu : menuList) {

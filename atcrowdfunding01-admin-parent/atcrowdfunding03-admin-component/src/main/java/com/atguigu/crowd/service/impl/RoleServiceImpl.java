@@ -19,7 +19,6 @@ public class RoleServiceImpl implements RoleService {
 	@Autowired
 	private RoleMapper roleMapper;
 
-
 	public PageInfo<Role> getPageInfo(Integer pageNum, Integer pageSize, String keyword) {
 		
 		// 1.开启分页功能
@@ -32,16 +31,13 @@ public class RoleServiceImpl implements RoleService {
 		return new PageInfo<Role>(roleList);
 	}
 
-
 	public void saveRole(Role role) {
 		roleMapper.insert(role);
 	}
 
-
 	public void updateRole(Role role) {
 		roleMapper.updateByPrimaryKey(role);
 	}
-
 
 	public void removeRole(List<Integer> roleIdList) {
 		
